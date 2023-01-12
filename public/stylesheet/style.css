@@ -392,3 +392,118 @@ padding: 0 15px;
 }
 
 /* categories */
+
+.service-section{
+    padding: 80px 0;
+}
+
+.service-section .service-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+}
+
+.service-section .service-item-inner{
+position: relative;
+overflow: hidden;
+}
+
+.service-section .service-item-inner img{
+width: 100%;
+display: block;
+filter:grayscale(100%);
+transform: all 0.5s ease;
+}
+
+.service-section .service-item-inner:hover img{
+filter: grayscale(0);
+transform: scale(1.1);
+}
+
+.service-section .service-item-inner .overlay{
+ position: absolute;   
+ left: 0;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ background-color: rgba(0, 0, 0,0.6);
+ display: flex;
+ align-items: center;
+ align-items: center;
+ transform: all 0.5s ease;
+}
+
+.service-section .service-item-inner:hover .overlay{
+    background-color:transparent ;
+}
+
+.service-section .service-item-inner .overlay h3{
+    color: #fffbf7;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+}
+.service-section .service-item-inner .overlay:hover h4{
+    transform: translate();
+    opacity: 0;
+}
+
+/* Top-Rated  */
+.work-section{
+    padding: 80px 0 0;
+}
+.work-section .work-item {
+ flex:  0 0 33.33%;
+ max-width: 33.33%;
+ padding: 15px;   
+}
+
+.work-section .work-item-inner img{
+    width: 100%;
+    display: block;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.work-section .work-item-inner:hover img{
+    filter:grayscale(100);
+    transform: scale(1);
+}
+
+
+.work-section .work-item-inner {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.work-section .work-item-inner .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 15px;
+    display:flex;
+    align-items:flex-end;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+
+
+.work-section .work-item-inner:hover .overlay{
+    opacity: 1;
+}
+
+.work-section .work-item-inner .overlay h4{
+    color: #f3f2f1;
+    font-size: 20px;
+    margin: 0;
+    transform:translate(30px);
+    transition: all 0.5s ease;
+}
+.work-section .work-item-inner:hover .overlay h4{
+    transform: translateX(0);
+}
