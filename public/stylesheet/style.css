@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
    margin: 0;
    line-height: 1.5;
@@ -10,5 +10,259 @@ textarea,
 button{
     font-family:'Railway','sans-serif';
     font-weight:400 ;
+     
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    max-width: 1170px; 
+    margin:auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.align-items-center{
+     align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+@keyframes ani01 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
     
 }
+
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom:60px; 
+    padding: 0 15 px;
+}
+
+.section-title h1{
+    display: inline-block;
+    font-size: 40px ;
+    color: rgba(0, 0, 0, 0.859);
+    font-weight: 700;
+    margin:0 ;
+    position: relative;
+}
+.section-title h1::before{
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 80px;
+    height: 3px;
+    background-color: #ff9800;
+}
+.btn-01{
+    background-color:#ff9800 ;
+    color: #ffffff;
+border:2px solid transparent;
+padding: 10px  35px;
+border-radius: 30px;
+line-height: 1.5;
+cursor: pointer;
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+display:inline-block;
+transform:all 0.5s ease;
+}
+.btn-01:hover{
+background-color: transparent;
+border-color: #ff9800;
+color: #ff9800;
+}
+
+.btn-01:focus{
+    outline: none;   
+}
+
+/* preloder */
+.preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: #111111;
+    z-index: 1099;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+}
+
+.preloader.loaded{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -99;
+}
+.preloader .loader{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ff9800;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+    animation: ani01 2s linear infinite; 
+}
+/* header */
+
+.header{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s ease;
+}
+.header .fixed{
+background-color: #ffffff;
+position: fixed;
+}
+.header .brand-name{
+    padding: 0 15px;
+}
+.header .border-name{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    text-transform:uppercase;
+    font-size: 900;
+    letter-spacing: 2px;
+    transform: all 0.5s ease;
+}
+.header .fixed .brand-name a{
+    color: #000000;
+}
+.header .nav-toggle{
+    width: 40px;
+    height: 34px;
+    border: 1px solid wheat;
+    cursor: pointer;
+    display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.5s ease;
+display:  none;
+}
+.header .fixed .nav-toggle {
+    border-color: #000000;
+}
+.header .nav-toggle span{
+    height: 1px;
+    display:block;
+    width: 16px;
+    background-color: #ffffff;
+    position:relative;
+    transition: all 0.5s ease;
+}
+
+.header .nav-toggle span::before,
+.header .nav-toggle span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+.header .fixed .nav-toggle span,
+.header .fixed .nav-toggle::before,
+.header .fixed .nav-toggle::after{
+
+    background-color: #000000;
+
+}
+
+.header .nav-toggle span::before{
+    transform: translate(-6px);
+
+}
+
+.header .nav-toggle span::after{
+    transform: translate(6px);
+
+}
+
+.header .nav{
+    padding: 0  15px;   
+}
+.header .nav ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.header .nav ul li a{
+   text-decoration: none; 
+   font-size: 16px;
+   font-weight: 600;
+   color: #ffffff;
+   padding: 25px;
+   display: block;
+   transition: all 0.5s ease;  
+}
+.header.fixed.nav  ul li a {
+    color: #000000;
+} 
+.header .fixed .nav  ul li a:hover,
+.header .nav  ul li a:hover {
+    color: #ff9800;
+}
+
+/* Home */
+
+.home-section{
+    min-height: 100vh;
+    background-image: url('../img/moviebg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 15 px;
+}
+.home-section:before{
+ content: '';
+ position: absolute;
+ box-sizing: border-box;
+ left: 0;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #000000;
+ opacity: 0.7;
+ z-index: -1;
+}
+
+
+.home-section .shape-01{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ff9800;
+    right: 5%;
+    top: 20px;
+    animation: ani01 5s linear infinite;
+}
+
