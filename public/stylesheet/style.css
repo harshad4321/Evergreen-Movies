@@ -1,0 +1,14 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap'); 
+body{
+   margin: 0;
+   line-height: 1.5;
+   background-color: #f3f2f1;
+}
+body,
+input,
+textarea,
+button{
+    font-family:'Railway','sans-serif';
+    font-weight:400 ;
+    
+}
