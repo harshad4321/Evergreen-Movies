@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     <title>Evergreen Movies</title>
+
     <link rel="stylesheet" href="/stylesheet/style.css">
 </head>
 <body>
@@ -21,7 +23,7 @@
     <div class="container">
         <div class="row justify-content-between align-item-center">
             <div class="brand-name">
-                <a href="index.html">Evergreen Movies</a>
+                <h1>Evergreen Movies</h1>
             </div>
             <div class="nav-toggle">
                 <span></span>
@@ -32,7 +34,7 @@
                             <li><a href="#about">About</a></li>
                             <li><a href="#categories">Categories</a></li>
                             <li><a href="#top">Top-Rated</a></li>
-                            <li><a href="#content">content</a></li>
+                            <li><a href="#contact">content</a></li>
                         </ul>
                   </nav>
             </div>
@@ -227,11 +229,12 @@
 </section>
 <!-- top raited end -->
 
-  <!-- Contact Section  start -->
-  <section class="contact-sectoin" id="contact">
+  <!--  Contact Section  start -->
+  <section class="contact-section" id="contact">
     <div class="container">
         <div class="row">
-            <div class="img-box">
+            <div class="contact-img">
+                <div class="img-box">
                 <div class="section-title">
                     <h1>Contact Us</h1>
                 </div>
@@ -243,32 +246,33 @@
             <form action="form">
                 <div class="row">
                     <div class="left input-group">
-                        <label for="">Name</label>
+                        <label>Name</label>
                         <input type="text" placeholder="Your Name Here" class="input-control">
                     </div>
                     <div class="right input-group">
                         <label for="">Email or Phone</label>
                         <input type="text" placeholder="Your Email or phone number" class="input-control">
                     </div>
+                    </div>
+          
+            <div class="row">
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea class="input-control" placeholder="You measage Here..."  ></textarea>
                 </div>
-       <div class="row">
-    <div class="input-group">
-        <label for="">Message</label>
-        <textarea class="input-control" placeholder="You measage Here..."  ></textarea>
-    </div>
-</div>
-<div class="form-btn">
-    <button type="button" class="btn btn-01" id="button">Send Message</button>
-</div>
-<div id="diloge">
-    Thankyou for contactiong us we'll get back to you soon. Don't  forget to check you email.
-</div>
-            </form>
-        </div>
-    </div>
-  </section>
-  <p class="copyright">&copy; 2023 Evergreen Movie</p>
-
+            </div>
+            <div class="form-btn">
+                <button type="button" class="btn btn-01" id="button">Send Message</button>
+            </div>
+                <div id="diloge">
+                    Thankyou for contactiong us we'll get back to you soon. Don't  forget to check you email.
+            </div>
+             </div>
+        </form>
+     </div>
+     </div>
+</section>
+<p class="copyright">&copy; 2023 Evergreen Movie</p>
 </body>
 <script src="javascript/script.js"></script>
 </html>

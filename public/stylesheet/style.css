@@ -575,20 +575,31 @@ padding: 40px 0;
 .contact-section {
     padding:80px 0 80px;
 }
+.contact-section .contact-img{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
 .contact-section .contact-img .img-box{
     padding: 200px 0;
     background-image: url('../img/icon/bg-img1.jpg');
     background-size: cover;
     background-position: center;
 }
+
+
+.contact-section .section-title{
+    text-align: center;
+}
+
 .contact-section .section-title h1{
     color: #ffffff;
 }
 
-.contact-section .section-title h1::before{
+.contact-section .section-title h1:before{
     background-color: #f3f2f1;
-    left: 15%;
-    margin-left: -14px;
+    left: 50%;
+    margin-left: -40px;
 }
 .contact-section .contact-form{
     flex: 0 0 100%;
@@ -598,8 +609,8 @@ padding: 40px 0;
 
 .contact-section .contact-form .form{
     background-color: #f3f2f1;
-    padding: 50px 40px;
-    margin-top: -50px;
+    padding: 55px 40px;
+    margin-top: -150px;
 }
 
 .contact-section .contact-form .form label{
@@ -640,6 +651,8 @@ padding: 40px 0;
 .contact-section .contact-form .form .form-btn{
     text-align: center;
 }
+
+/* 
 .contact-section .contact-info {
     flex:  0 0 100%;
     max-width: 100%;
@@ -657,4 +670,5 @@ padding: 40px 0;
     font-size: 16px;
     font-weight: 600;
     margin: 0;
-}
+} */
+ 
