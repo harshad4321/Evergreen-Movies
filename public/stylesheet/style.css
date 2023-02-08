@@ -7,7 +7,7 @@ body{
 body,
 input,textarea,
 button{
-    font-family:'Railway','sans-serif';
+    font-family:'Raleway','sans-serif';
     font-weight:400 ;
 }
 *{
@@ -149,12 +149,13 @@ position: fixed;
     width: 40px;
     height: 34px;
     border: 1px solid rgb(254, 254, 254);
+    border-radius: 3px;
     cursor: pointer;
     display: flex;
-align-items: center;
-justify-content: center;
-transition: all 0.5s ease;
-display:  none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    display:  none;
 }
 .header .fixed .nav-toggle {
     border-color: #000000;
@@ -215,7 +216,7 @@ display:  none;
    font-size: 16px;
    font-weight: 600;
    color: #ffffff;
-   padding: 25px;
+   padding: 25px 0;
    display: block;
    transition: all 0.5s ease;  
 }
@@ -298,7 +299,7 @@ display:  none;
 
  @keyframes scrollDown {
     0% ,20% ,50% ,80%,100%{
-transform: translateY(0);
+        transform: translateY(0);
     }  
     40%{
         transform: translateY(-30px);
@@ -498,7 +499,7 @@ transform: scale(1.1);
 }
 
 .work-section .work-item-inner .overlay h4{
-    color: #f3f2f1;
+    color: #f3f2f1;  
     font-size: 20px;
     margin: 0;
     transform:translate(30px);
@@ -509,7 +510,7 @@ transform: scale(1.1);
 }
 
 /* lightbox */
-/* .lightbox{
+ .lightbox{
     position: fixed;
     z-index: 1099;
     left: 0;
@@ -567,7 +568,7 @@ padding: 40px 0;
 .lightbox .lightbox-caption .lightbox-category{
     padding-right: 50px;
 
-} */
+} 
 
 
 /* contact-section */
