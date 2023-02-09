@@ -17,13 +17,12 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $(".header").addClass("fixed");
-        }
-        else {
+        } else {
             $(".header").removeClass("fixed");
         }
-    })
+    });
 
-    $("a").on('click', function () {
+    $("a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -34,10 +33,11 @@ $(document).ready(function () {
             })
         }
     })
+
     const wHeight = $(window).height();
     $(".lightbox-img").css("max-height", wHeight + "px");
     $(".work-item-inner").click(function () {
-        index = $(this).parent("work-item").index();
+        index = $(this).parent().index();
         $(".lightbox").addClass("open");
         lightboxSlideShow();
     })
@@ -63,7 +63,7 @@ $(document).ready(function () {
         $(".lightbox").removeClass("open");
     })
     $('.lightbox').click(function (event) {
-        if ($(event.target).hasClass(".lightbox")) {
+        if ($(event.target).hasClass("lightbox")) {
             $(this).removeClass("open")
         }
     })
@@ -75,4 +75,13 @@ $(document).ready(function () {
         $(".lightbox-counter").html(totalWorkItems + "/" + (index + 1));
 
     }
+    $('#button').click(function () {
+        $('#dialog').dialog('open');
+    })
+    $('#dialog').dialog({
+        title: "thank you for contacting ",
+        closeOnEscape: false,
+        model: true,
+        autoOpen: false
+    })
 })

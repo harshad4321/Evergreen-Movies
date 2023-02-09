@@ -237,7 +237,7 @@ position: fixed;
     background-position: center;
     position: relative;
     z-index: 1;
-    padding: 0 15 px;
+    padding: 0 15px;
 }
 .home-section:before{
  content: '';
@@ -271,7 +271,6 @@ position: fixed;
     text-align: center;
  }
 
-
  .home-section .home-content h4{
     font-size: 20px;
     color: #ffffff;
@@ -282,11 +281,11 @@ position: fixed;
     font-size: 60px;
     margin: 0;
     color: #ffffff;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 10px;
  }
- .home-section .section-down{
+ .home-section .scroll-down{
     position: absolute;
     left: 50%;
     bottom: 30px;
@@ -298,7 +297,7 @@ position: fixed;
  }
 
  @keyframes scrollDown {
-    0% ,20% ,50% ,80%,100%{
+    0%,20%,50%,80%,100%{
         transform: translateY(0);
     }  
     40%{
@@ -371,7 +370,7 @@ padding: 0 15px;
     flex: 0 0 25%;
     max-width: 25%;
     padding: 0 15%;
-    text-align: cetent ;
+    text-align: center ;
     margin-top: 30px;
 }
 
@@ -385,7 +384,7 @@ padding: 0 15px;
     font-size: 16px; 
     color: #555555;
     font-weight: 600;
-     text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .about-section .about-content .btn{
@@ -447,7 +446,7 @@ transform: scale(1.1);
     text-transform: capitalize;
 }
 .service-section .service-item-inner .overlay:hover h4{
-    transform: translate();
+    transform: translate(30px);
     opacity: 0;
 }
 
@@ -502,7 +501,7 @@ transform: scale(1.1);
     color: #f3f2f1;  
     font-size: 20px;
     margin: 0;
-    transform:translate(30px);
+    transform:translateX(30px);
     transition: all 0.5s ease;
 }
 .work-section .work-item-inner:hover .overlay h4{
@@ -535,7 +534,7 @@ height: auto;
 max-width: 100%;
 padding: 40px 0;
 }
-.lightbox .immg-box{
+.lightbox .img-box{
     position: relative;
     cursor: auto;
 }
@@ -569,7 +568,39 @@ padding: 40px 0;
     padding-right: 50px;
 
 } 
+.lightbox .lightbox-controls .prev,
+.lightbox .lightbox-controls .next{
+    position: absolute;
+    height: calc(100%-80px);
+    top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.lightbox .lightbox-controls .prev{
+    left:0;
+    width: 50%;
+    justify-content: flex-start;
+}
+.lightbox .lightbox-controls .next{
+    right:0 ;
+    width: 50px;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+.lightbox .lightbox-controls .prev img
+.lightbox .lightbox-controls .next img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: all 0.5s;
 
+}
+.lightbox .lightbox-controls .prev:hover img,
+.lightbox .lightbox-controls .next:hover img{
+ background-color: rgba(0, 0, 0, 0.5);
+}
 
 /* contact-section */
 
@@ -598,7 +629,7 @@ padding: 40px 0;
 }
 
 .contact-section .section-title h1:before{
-    background-color: #f3f2f1;
+    background-color: #ffffff;
     left: 50%;
     margin-left: -40px;
 }
@@ -653,7 +684,7 @@ padding: 40px 0;
     text-align: center;
 }
 
-/* 
+
 .contact-section .contact-info {
     flex:  0 0 100%;
     max-width: 100%;
@@ -667,9 +698,36 @@ padding: 40px 0;
 }
 
 
-.contact-section .contact-form .info-item h5{
+.contact-section .contact-info .info-item h5{
     font-size: 16px;
     font-weight: 600;
     margin: 0;
-} */
- 
+} 
+.contact-section .social-links{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px ;
+    text-align: center;
+}
+.contact-section .social-links a  {
+text-decoration: none;
+display: inline-block;
+margin: 0 5px;
+
+}
+ .contact-section .social-links a img{
+    width: 28px;
+    display: block;
+    transition: all 0.5s ease;
+ }
+
+ .contact-section .social-links a:hover img{
+    opacity: 0.5;
+ }
+.copyright{
+    border-top: 1px solid #c5c5c5;
+    padding: 25px;
+text-align: center;
+color: #555555;
+font-size: 16px  ;
+}
