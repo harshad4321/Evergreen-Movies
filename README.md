@@ -20,8 +20,8 @@ Before you start, you need to have the following software installed on your comp
 ## Installation
 1. Clone the repository
 
-`git clone https://github.com/<your-username>/web-project.git
-`
+`git clone https://github.com/<your-username>/web-project.git`
+
 2. Change into the project directory
 
 `cd web-project`
